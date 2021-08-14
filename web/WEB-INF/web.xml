@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+<!--    定义全局初始化参数-->
+    <context-param>
+        <param-name>globalname</param-name>
+        <param-value>zhangsan</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>globalpassword</param-name>
+        <param-value>123456</param-value>
+    </context-param>
+
+
+
+
+    <servlet>
+        <servlet-name>Demo01Servlet</servlet-name>
+        <servlet-class>atguigu.servlet.Demo01Servlet01</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Demo01Servlet</servlet-name>
+        <url-pattern>/demo01</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Demo05Servlet</servlet-name>
+        <servlet-class>atguigu.servlet.Demo05Servlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Demo05Servlet</servlet-name>
+        <url-pattern>/demo05</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Demo06Servlet</servlet-name>
+        <servlet-class>atguigu.servlet.Demo06Servlet</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Demo06Servlet</servlet-name>
+        <url-pattern>/demo06</url-pattern>
+    </servlet-mapping>
+
+<!--<servlet>-->
+<!--    <servlet-name>MyDefaultServlet</servlet-name>-->
+<!--    <servlet-class>atguigu.servlet.MyDefaultServlet</servlet-class>-->
+<!--</servlet>-->
+<!--<servlet-mapping>-->
+<!--    <servlet-name>MyDefaultServlet</servlet-name>-->
+<!--    <url-pattern>/</url-pattern>-->
+<!--</servlet-mapping>-->
+
+<servlet>
+    <servlet-name>Demo12Servlet</servlet-name>
+    <servlet-class>atguigu.servlet.Demo12Servlet</servlet-class>
+    <init-param>
+        <param-name>username</param-name>
+        <param-value>zhangsan</param-value>
+    </init-param>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Demo12Servlet</servlet-name>
+    <url-pattern>/demo12</url-pattern>
+</servlet-mapping>
+
+
+
+</web-app>
