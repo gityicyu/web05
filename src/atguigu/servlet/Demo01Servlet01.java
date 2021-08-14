@@ -13,6 +13,8 @@ public class Demo01Servlet01 extends HttpServlet {
         System.out.println("我是master分支,主干分支");
         System.out.println("你好!!!!!!!!!!!!");
 
+        System.out.println("晚上了");
+
     }
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
