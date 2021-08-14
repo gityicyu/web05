@@ -10,10 +10,12 @@ public class Demo01Servlet01 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Servlet请求~~~~~~");
-        System.out.println("我是hotfix分支");
+        
         System.out.println("我是可以解决merge出现的冲突");
+
+        System.out.println("在测试一下");
         System.out.println("我是master分支,主干分支");
-        System.out.println("我直接在gitee上修改");
+        
         System.out.println("本地修改 push上gitee");
         System.out.println("我是克隆后的项目 本地提交修改");
     }
