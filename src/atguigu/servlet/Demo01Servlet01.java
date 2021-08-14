@@ -10,7 +10,9 @@ public class Demo01Servlet01 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Servlet请求~~~~~~");
-        System.out.println("我是可以克隆 的master");
+
+        System.out.println("我是可以解决merge出现的冲突");
+
 
     }
     @Override
