@@ -15,6 +15,7 @@ public class Demo01Servlet01 extends HttpServlet {
         System.out.println("我是master分支,主干分支");
         System.out.println("我直接在gitee上修改");
         System.out.println("本地修改 push上gitee");
+        System.out.println("我是克隆后的项目 本地提交修改");
     }
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
