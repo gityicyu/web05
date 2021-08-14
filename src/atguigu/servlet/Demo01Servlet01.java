@@ -11,6 +11,7 @@ public class Demo01Servlet01 extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Servlet请求~~~~~~");
         System.out.println("我是master分支,主干分支");
+        System.out.println("推送信息到master");
     }
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
